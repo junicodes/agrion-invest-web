@@ -1,0 +1,15 @@
+.nav-item .nav-link{
+    color: #496555 !important;
+    font-weight: 500;
+}
+.nav-item .login-link {
+    color: #F35280 !important;
+}
+.navbar-brand{
+    height: 60px;
+    width: 120px;
+}
+.navbar-brand img {
+    height: 100%;
+    width: 100%;
+}
