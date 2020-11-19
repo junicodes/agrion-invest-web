@@ -15,32 +15,32 @@ function NavBar(props) {
         removeSignInClassList += ' d-none'
     }
     return (
-        <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-lg navbar-light">
+        <a className="navbar-brand" href="#">
           <img src={logo} alt=""/>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">How it works</a>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item mx-3">
+              <a className="nav-link" href="#">How it works</a>
             </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Sell anything</a>
+            <li className="nav-item mx-3">
+              <a className="nav-link" href="#">Sell anything</a>
             </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Sell everywhere</a>
+            <li className="nav-item mx-3">
+              <a className="nav-link" href="#">Sell everywhere</a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto mr-5">
+          <ul className="navbar-nav ml-auto mr-5">
             <li class={removeRegisterClassList}>
-              <Link to="/auth/signup" class="nav-link" href="#">Start Shopping</Link>
+              <Link to="/auth/signup" className="nav-link" href="#">Start Shopping</Link>
             </li>
             <li class={removeSignInClassList}>
-              <Link to="/auth/signin" class="nav-link login-link" href="#">Log In</Link>
+              <Link to="/auth/signin" className="nav-link login-link" href="#">Log In</Link>
             </li>
           </ul>
         </div>

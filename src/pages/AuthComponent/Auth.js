@@ -13,8 +13,8 @@ import logo from '../../images/agrion-logo.png';
 function Auth() {
   return (
     <div className="signin-full col-12">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <Link to="/" class="navbar-brand">
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <Link to="/" className="navbar-brand">
           <img src={logo} alt="" />
         </Link>
       </nav>

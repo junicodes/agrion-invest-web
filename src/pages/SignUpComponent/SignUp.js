@@ -7,13 +7,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function SignUp() {
     return (
-        <div class="col-6 auth-con border mx-auto">
-            <h3 class="mt-4 text-center">Register</h3>
-            <form class="col-10 mx-auto">
+        <div className="col-6 auth-con border mx-auto">
+            <h3 className="mt-4 text-center">Register</h3>
+            <form className="col-10 mx-auto">
                 <InputGroup id="nameInput" label="Name" inputType="text" />
                 <InputGroup id="emailInput" label="Email" inputType="email" />
                 <InputGroup id="passwordInput" label="Password" inputType="password" />
-                <Buttons btnClass="btn-custom-green" btnWidth="col-12" buttonLabel="Register" />
+                <Buttons btnclassName="btn-custom-green" btnWidth="col-12" buttonLabel="Register" />
             </form>
         </div>
     )

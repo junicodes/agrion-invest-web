@@ -6,15 +6,15 @@ import Buttons from "../ButtonsComponent/Buttons";
 
 
 function SignUpForm(props) {
-  return <form class="col-12 pt-4 animate__animated animate__fadeIn">
+  return <form className="col-12 pt-4 animate__animated animate__fadeIn">
             <InputGroup inputType="text" labelClassList="d-none" fontawesomeClassList="fas fa-user" placeholder="Username"/>
             <InputGroup inputType="email" labelClassList="d-none" fontawesomeClassList="fas fa-at" placeholder="Email Address"/>
             <InputGroup inputType="password" labelClassList="d-none" fontawesomeClassList="fas fa-lock" placeholder="Password"/>
             <InputGroup inputType="button" labelClassList="d-none" fontawesomeClassList="fab fa-facebook-f" inputValue="Signup with Facebook"/>
             <InputGroup inputType="button" labelClassList="d-none" fontawesomeClassList="fab fa-google" inputValue="Signup with Google"/>
-            <p class="tac-confirm text-center mb-1">By pressing submit, you agree to our <br/><Link class="tac-link">terms and conditions</Link></p>
+            <p className="tac-confirm text-center mb-1">By pressing submit, you agree to our <br/><Link className="tac-link">terms and conditions</Link></p>
             <div className="col-12 text-center">
-                <Buttons btnClass="btn-custom-green" buttonLabel="SUBMIT" />
+                <Buttons btnclassName="btn-custom-green" buttonLabel="SUBMIT" />
             </div>
         </form>;
 }

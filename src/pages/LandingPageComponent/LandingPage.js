@@ -12,11 +12,11 @@ function LandingPage() {
     <div>
       <TopBar topBarMessage="All orders over $50 qualify for FREE SHIPPING!" />
       <NavBar currentPage="landing" />
-      <div class="col-12 px-0 landing-jumbo row mx-0">
-        <div class="col-12 col-md-4 jumbo-text">
+      <div className="col-12 px-0 landing-jumbo row mx-0">
+        <div className="col-12 col-md-4 jumbo-text">
           <h1>Connecting Farmers to Investors</h1>
           <Link to="/auth/signup">
-            <Buttons btnClass="btn-custom-green" buttonLabel="Get Started!" />  
+            <Buttons btnclassName="btn-custom-green" buttonLabel="Get Started!" />  
           </Link>
         </div>
         <div className="col-12 col-md-6 jumbo-fruits ml-auto">

@@ -50,7 +50,7 @@ function SwitchButtons(props) {
   }
 
   return (
-    <div class="col-12 text-center pt-4">
+    <div className="col-12 text-center pt-4">
       <Link to="/auth/signin">
         <button onClick={() => setClassList1(buttonSwitch1())} type="button" class={classList1}>
           {props.buttonLabel1}

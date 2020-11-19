@@ -11,9 +11,9 @@ import Auth from "./pages/AuthComponent/Auth";
 function App() {
   return (
     <Router>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 page-full px-0">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 page-full px-0">
             <Route path= "/" exact component={LandingPage} />
             <Route path= "/signup" component={SignUp} />
             <Route path= "/auth" component={Auth} />
