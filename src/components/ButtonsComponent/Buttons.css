@@ -2,3 +2,8 @@
     background:  #55A871;
     color: white;
 }
+.btn {
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 12px 24px;
+}

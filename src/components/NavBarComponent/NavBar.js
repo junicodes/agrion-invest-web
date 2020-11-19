@@ -37,10 +37,10 @@ function NavBar(props) {
           </ul>
           <ul class="navbar-nav ml-auto mr-5">
             <li class={removeRegisterClassList}>
-              <Link to="/signup" class="nav-link" href="#">Start Shopping</Link>
+              <Link to="/auth/signup" class="nav-link" href="#">Start Shopping</Link>
             </li>
             <li class={removeSignInClassList}>
-              <a class="nav-link login-link" href="#">Log In</a>
+              <Link to="/auth/signin" class="nav-link login-link" href="#">Log In</Link>
             </li>
           </ul>
         </div>

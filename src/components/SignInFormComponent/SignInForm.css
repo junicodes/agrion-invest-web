@@ -1,0 +1,9 @@
+.tac-link {
+    color: yellow !important;
+}
+.tac-confirm {
+    font-size: 10px;
+}
+form {
+    transition: 1s;
+}

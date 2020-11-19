@@ -15,7 +15,9 @@ function LandingPage() {
       <div class="col-12 px-0 landing-jumbo row mx-0">
         <div class="col-12 col-md-4 jumbo-text">
           <h1>Connecting Farmers to Investors</h1>
-          <Buttons btnClass="btn-custom-green" buttonLabel="Get Started!" />
+          <Link to="/auth/signup">
+            <Buttons btnClass="btn-custom-green" buttonLabel="Get Started!" />  
+          </Link>
         </div>
         <div className="col-12 col-md-6 jumbo-fruits ml-auto">
 

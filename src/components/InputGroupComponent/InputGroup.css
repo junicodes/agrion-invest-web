@@ -1,0 +1,15 @@
+i {
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+    color: #757575;
+}
+.standard-input {
+    font-size: 12px;
+    border-radius: 20px;
+    height: 40px;
+}
+input::placeholder {
+    font-size: 12px;
+    color: #e6e6e6;
+}
