@@ -18,7 +18,7 @@ function Auth() {
           <img src={logo} alt="" />
         </Link>
       </nav>
-      <div className="signin-con col-4 ml-auto mr-5">
+      <div className="signin-con col-12 col-sm-8 col-md-6 col-lg-4 ml-auto mr-5">
         <SwitchButtons buttonLabel1="Log In" buttonLabel2="Sign Up" />
         <Route path="/auth/" exact component={SignInForm} />
         <Route path="/auth/signin" exact component={SignInForm} />
