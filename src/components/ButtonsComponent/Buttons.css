@@ -1,9 +1,17 @@
 .btn-custom-green {
-    background:  #55A871;
+    background:   #55A871;
     color: white;
+    border: 2px solid  #55A871;
+    font-weight: 800;
+    transition: 1s all ease;
+}
+.btn-custom-green:hover{
+    background:  white;
+    color: #55A871;
+    transform: scale(1.003);
 }
 .btn {
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 12px;
-    padding: 12px 24px;
+    padding: 8px 24px;
 }

@@ -17,7 +17,7 @@ function NavBar(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="#">
-          <img src={logo} alt=""/>
+          <img src={logo} alt="logo"/>
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -36,10 +36,10 @@ function NavBar(props) {
             </li>
           </ul>
           <ul className="navbar-nav ml-auto mr-5">
-            <li class={removeRegisterClassList}>
+            <li className={removeRegisterClassList}>
               <Link to="/auth/signup" className="nav-link" href="#">Start Shopping</Link>
             </li>
-            <li class={removeSignInClassList}>
+            <li className={removeSignInClassList}>
               <Link to="/auth/signin" className="nav-link login-link" href="#">Log In</Link>
             </li>
           </ul>

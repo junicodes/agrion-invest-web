@@ -16,14 +16,13 @@ function LandingPage() {
         <div className="col-12 col-md-4 jumbo-text">
           <h1>Connecting Farmers to Investors</h1>
           <Link to="/auth/signup">
-            <Buttons btnclassName="btn-custom-green" buttonLabel="Get Started!" />  
+            <Buttons btnClass="btn-custom-green" buttonLabel="Get Started" />  
           </Link>
         </div>
         <div className="col-12 col-md-6 jumbo-fruits ml-auto">
 
         </div>
       </div>
-      {/* <p>click <Link to="/signup">here</Link> to go to the sign up page</p> */}
     </div>
   );
 }

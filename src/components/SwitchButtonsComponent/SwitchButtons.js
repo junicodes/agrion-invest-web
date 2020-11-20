@@ -4,63 +4,45 @@ import { Link } from "react-router-dom";
 
 import { Container, Row, Col } from "react-bootstrap";
 
-function SwitchButtons(props) {
-  console.log(window.location.href)
-  const [classList1, setClassList1] = useState('btn switch-btn mx-2 active-btn')
-  const [classList2, setClassList2] = useState('btn switch-btn mx-2 inactive-btn')
-  function whosFirst() {
-    if (window.location.href == '/auth/signin') {
-      setClassList1('btn switch-btn mx-2 active-btn')
-      setClassList2('btn switch-btn mx-2 inactive-btn')
-    } else {
-      setClassList1('btn switch-btn mx-2 inactive-btn')
-      setClassList2('btn switch-btn mx-2 active-btn')
-    }
-  }
+const SwitchButtons = (props) => {
+  console.log(window.location.pathname)
+  const [classList1, setClassList1] = useState('')
+  const [classList2, setClassList2] = useState('')
+
+  //Classses
+  const loginClass  = `btn switch-btn ${classList1}`;
+  const signUpClass = `btn switch-btn ${classList2}`;
+
   useEffect(() => {
-    whosFirst();
-    return () => {
-      console.log('effect complete')
+    switch (window.location.pathname) {
+      case '/auth/signup':
+        setClassList1('active-btn animate__animated animate__fadeInRight')
+        setClassList2('inactive-btn')
+        break;
+      case '/auth/signin':
+        console.log('worked')
+        setClassList1('inactive-btn')
+        setClassList2('active-btn animate__animated animate__fadeInLeft')
+        break;
+      default:
+        break;
     }
-  }, [])
-  function buttonSwitch1() {
-    if (classList1 === 'btn switch-btn mx-2 active-btn') {
-        return 'btn switch-btn mx-2 active-btn'
-    } else {
-        disableOther()
-        return 'btn switch-btn mx-2 active-btn'
-    }
-  }
-  function buttonSwitch2() {
-    if (classList2 === 'btn switch-btn mx-2 active-btn') {
-        return 'btn switch-btn mx-2 active-btn'
-    } else {
-        disableOther()
-        return 'btn switch-btn mx-2 active-btn'
-    }
-  }
-  function disableOther() {
-      console.log('here')
-    if (classList1 === 'btn switch-btn mx-2 active-btn') {
-        setClassList1('btn switch-btn mx-2 inactive-btn')
-    }
-    if (classList2 === 'btn switch-btn mx-2 active-btn') {
-        setClassList2('btn switch-btn mx-2 inactive-btn')
-    }
-  }
+  }, [window.location.pathname])
 
   return (
-    <div className="col-12 text-center pt-4">
-      <Link to="/auth/signin">
-        <button onClick={() => setClassList1(buttonSwitch1())} type="button" class={classList1}>
-          {props.buttonLabel1}
-        </button>
-      </Link>
-      <Link to="/auth/signup">
-        <button onClick={() => setClassList2(buttonSwitch2())} type="button" class={classList2}>
-          {props.buttonLabel2}
-        </button>
-      </Link>
+    <div className="col-12 mx-auto text-center pt-4">
+          <div className="btn-mask mx-auto" style={{width: '200px'}}>
+            <Link to="/auth/signin">
+                  <button type="button" className={loginClass}>
+                    {props.buttonLabel1}
+                  </button>
+            </Link>
+             <Link to="/auth/signup">
+                <button type="button" className={signUpClass}>
+                  {props.buttonLabel2}
+                </button>
+            </Link>
+          </div>
     </div>
   );
 }

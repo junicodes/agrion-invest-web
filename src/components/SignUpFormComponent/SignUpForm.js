@@ -12,9 +12,10 @@ function SignUpForm(props) {
             <InputGroup inputType="password" labelClassList="d-none" fontawesomeClassList="fas fa-lock" placeholder="Password"/>
             <InputGroup inputType="button" labelClassList="d-none" fontawesomeClassList="fab fa-facebook-f" inputValue="Signup with Facebook"/>
             <InputGroup inputType="button" labelClassList="d-none" fontawesomeClassList="fab fa-google" inputValue="Signup with Google"/>
-            <p className="tac-confirm text-center mb-1">By pressing submit, you agree to our <br/><Link className="tac-link">terms and conditions</Link></p>
+            <p className="tac-confirm text-center mb-1">By pressing submit, you agree to our <br/>
+            <Link to="/terms-conditions" className="tac-link">terms and conditions</Link></p>
             <div className="col-12 text-center">
-                <Buttons btnclassName="btn-custom-green" buttonLabel="SUBMIT" />
+                <Buttons btnClass="btn-custom-green" buttonLabel="SUBMIT" />
             </div>
         </form>;
 }

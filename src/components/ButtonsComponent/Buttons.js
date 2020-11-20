@@ -19,7 +19,7 @@ function Buttons(props) {
         classList += ' col-12'
     }
     return (
-        <button type="button" class={classList}>{props.buttonLabel}</button>
+        <button type="button" className={classList}>{props.buttonLabel}</button>
     )
 }
 

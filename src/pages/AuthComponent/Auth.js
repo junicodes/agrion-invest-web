@@ -15,15 +15,14 @@ function Auth() {
     <div className="signin-full col-12">
       <nav className="navbar navbar-expand-lg navbar-light">
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" />
         </Link>
       </nav>
       <div className="signin-con col-12 col-sm-8 col-md-6 col-lg-4 ml-auto mr-5">
         <SwitchButtons buttonLabel1="Log In" buttonLabel2="Sign Up" />
-        <Route path="/auth/" exact component={SignInForm} />
+        <Route path="/auth" exact component={SignInForm} />
         <Route path="/auth/signin" exact component={SignInForm} />
         <Route path="/auth/signup" component={SignUpForm} />
-        {/* <SignInForm /> */}
       </div>
     </div>
   );
