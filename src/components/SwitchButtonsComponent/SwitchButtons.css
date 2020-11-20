@@ -1,0 +1,38 @@
+.switch-btn {
+    border-radius: 20px;
+    font-size: 12px;
+    height: 40px;
+    min-width: 100px;
+}
+.switch-btn:active, .switch-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.switch-btn:hover {
+    color: white;
+}
+.active-btn {
+    background: #55A871;
+    color: white;
+    position: relative;
+    z-index: 3;
+    transition: 1s;
+    font-weight: 600;
+}
+.active-btn:hover {
+    background: #3ab16e;
+    color: white;
+}
+.inactive-btn {
+    background: #e6e6e6;
+    color: #B9B9B9 !important;
+    position: relative;
+    font-weight: 500;
+    /* left: -25px; */
+    z-index: 1;
+    transition: 1s;
+}
+.btn-mask {
+    background: #e6e6e6;
+    border-radius: 20px;
+}
