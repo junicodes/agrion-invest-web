@@ -4,3 +4,28 @@
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+.scroller{
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color:#55A871;
+}
+.scroller::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scroller::-webkit-scrollbar-track {
+  background: #55A871;
+  border-radius: 10px;
+  display: none;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  color: black;
+  border-radius: 10px;
+  background: #55A871;
+}
+.scroller::-webkit-scrollbar-thumb:hover {
+  background:  white;
+  border-color: #3f3d56;
+  border-radius: 10px;
+}

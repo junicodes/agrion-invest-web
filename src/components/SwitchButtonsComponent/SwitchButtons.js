@@ -15,14 +15,14 @@ const SwitchButtons = (props) => {
 
   useEffect(() => {
     switch (window.location.pathname) {
-      case '/auth/signup':
+      case '/auth/signin':
         setClassList2('inactive-btn')
         if(props.location && props.location.authState) {  
           return setClassList1('active-btn animate__fadeInRight')
         }
         setClassList1('active-btn animate__fadeIn')
         break;
-      case '/auth/signin':
+      case '/auth/signup':
         setClassList1('inactive-btn')
         if(props.location && props.location.authState) {  
           return setClassList2('active-btn animate__fadeInLeft')

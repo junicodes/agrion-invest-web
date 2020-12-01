@@ -1,0 +1,78 @@
+.profile-con {
+    min-height: 85vh;
+}
+.profile-image {
+    height: 200px;
+    width: 200px;
+}
+.profile-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-basic h3{
+    font-weight: bold;
+    color: #496556;
+}
+.profile-basic p{
+    font-size: 20px;
+    color: #496556;
+}
+.profile-details {
+    min-height: 85vh;
+}
+.profile-type-indicator {
+    color:#55A871;
+    border-bottom: 3px solid #55A871;
+    font-size: 30px;
+}
+.full-profile-data {
+    max-height: 75vh;
+}
+.full-profile-data label {
+    color: rgb(184, 180, 180);
+    font-size: 12px;
+}
+.full-profile-data input, .full-profile-data select, .full-profile-data textarea {
+    font-size: 12px;
+}
+.full-profile-data input:active, .full-profile-data input:focus, .full-profile-data select:active, .full-profile-data select:focus,
+.full-profile-data textarea:active, .full-profile-data textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+textarea {
+    height: 70px !important;
+}
+.single-profile-data p{
+    color: rgb(184, 180, 180);
+    font-size: 12px;
+}
+.single-profile-data span{
+    color: grey;
+    font-size: 14px;
+}
+.profile-utilities-btn {
+    color: grey;
+    width: 300px;
+    height: 40px;
+    font-size: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.visitor-utilities-btn {
+    color: white;
+    background: #55A871;
+    width: 150px;
+    font-size: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.profile-utilities-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* .visitor-utilities-con {
+    position: absolute;
+    bottom: 0px;
+} */

@@ -3,7 +3,8 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import LandingPage from "./pages/LandingPageComponent/LandingPage";
 import Auth from "./pages/AuthComponent/Auth";
-import NotFound from "./pages/NotFound/NotFound";
+import NotFound from "./pages/NotFoundComponent/NotFound";
+import Profile from "./pages/ProfileComponent/Profile";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Switch>
               <Route path= "/" exact component={LandingPage} />
               <Route path= "/auth" component={Auth} />
+              <Route path= "/profile" component={Profile} />
               <Route component={NotFound} />
             </Switch>
           </div>
