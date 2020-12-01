@@ -9,15 +9,24 @@ const Buttons = forwardRef((props, ref) => {
     //         color: 'white'
         
     // }
-    let classList = 'btn';
+    let classList = 'custom-btn';
     if (props.btnClass === "btn-custom-green") {
         classList += ' btn-custom-green'
+    } else if (props.btnClass === "btn-custom-red") {
+        classList += ' btn-custom-red'
+    } else if (props.btnClass === "btn-custom-white") {
+        classList += ' btn-custom-white'
     }
     if (props.btnWidth === "col-12") {
         classList += ' col-12'
     }
+    const buttonSubmit = (e) => {
+        if (props.onSubmitClick) {
+            return props.onSubmitClick(e)
+        }
+    }
     return (
-        <button ref={ref} onClick={(e) => {props.onSubmitClick(e)}} type="button" className={classList}>{props.buttonLabel}</button>
+        <button ref={ref} onClick={buttonSubmit} type="button" className={classList}>{props.buttonLabel}</button>
     )
 });
 

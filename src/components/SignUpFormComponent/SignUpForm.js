@@ -1,5 +1,5 @@
 import React, { createRef, Fragment, useEffect, useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link, withRouter, useHistory } from "react-router-dom";
 import {useSelector, useDispatch} from 'react-redux';
 import InputGroup from "../InputGroupComponent/InputGroup";
 import SmallModal from'../../helper/tools/SmallModal/SmallModal';
@@ -11,6 +11,7 @@ import {signUpApi} from '../../apiRequest/signUpApi';
 import "./SignUpForm.css";
 
 const SignUpForm = () => {
+    const history = useHistory();
     //validation State
     const [validateMsg, setValidateMsg] = useState(true);
     const [buttonLabel, setButtonLabel] = useState('Sign Up')
@@ -69,6 +70,7 @@ const SignUpForm = () => {
     //Api Request
     const handleSubmitClick = async (e) => {
         e.preventDefault()
+        history.push("/profile/farmer");
         //Button Preload 
         setButtonLabel(<Fragment><span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></Fragment>);
 

@@ -10,7 +10,30 @@
     color: #55A871;
     transform: scale(1.003);
 }
-.btn {
+.btn-custom-red {
+    background:   rgb(184, 51, 51);
+    color: white;
+    border: 2px solid  rgb(184, 51, 51);
+    font-weight: 800;
+    transition: 1s all ease;
+}
+.btn-custom-red:hover{
+    background:  white;
+    color: rgb(184, 51, 51);
+    transform: scale(1.003);
+}
+.btn-custom-white {
+    background:   white;
+    color: grey;
+    border: 2px solid  grey;
+    transition: 1s all ease;
+}
+/* .btn-custom-white:hover{
+    background:  white;
+    color: white;
+    transform: scale(1.003);
+} */
+.custom-btn {
     border-radius: 20px;
     font-size: 12px;
     padding: 8px 24px;
