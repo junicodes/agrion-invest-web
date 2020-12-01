@@ -1,0 +1,111 @@
+.small-modal-sty {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    visibility: visible;
+  }
+  
+  .small-modal-sty .color-black {
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+  }
+  
+  .small-modal-sty .modal-body {
+    height: 38vh;
+    background: white;
+    border-radius: 0.5vh;
+    width: 36.6vw;
+    /* 36.6vw 500px */
+    top: 75%;
+    left: 50%;
+    margin-top: -45.08vh;
+    /* Negative half of height. 15.08vh 100px*/
+    margin-left: -18.3vw;
+    /* Negative half of width. 18.3vw 250px*/
+    color: #252525;
+  }
+  
+  .small-modal-sty .modal-body .modal-title h5 {
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .small-modal-sty .modal-body .modal-middle p {
+    color: #252525;
+    font-weight: 600;
+    border: 0px;
+    font-size: 2vh;
+  }
+  
+  .small-modal-sty .modal-body .close-modal {
+    position: absolute;
+    right: 8px;
+    top: 1px;
+    font-size: 20px;
+    background-color: inherit;
+    float: right;
+  }
+  
+  .small-modal-sty .modal-body button {
+    padding: 0.5vh;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px !important;
+  }
+  
+  .small-modal-sty .modal-body .btn.active.focus, .small-modal-sty .modal-body .btn.active:focus, .small-modal-sty .modal-body .btn.focus, .small-modal-sty .modal-body .btn.focus:active, .small-modal-sty .modal-body .btn:active:focus, .small-modal-sty .modal-body .btn:focus {
+    outline: 0 !important;
+    outline-offset: 0  !important;
+    background-image: none  !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none  !important;
+  }
+  
+  .small-modal-sty .modal-body .yes {
+    border-color: #66CC66;
+  }
+  
+  .small-modal-sty .modal-body .no {
+    border-color: tomato;
+  }
+  
+  @media (max-width: 1200px) {
+    .small-modal-sty .modal-body {
+      width: 46.6vw;
+      /* 36.6vw 500px */
+      margin-left: -23.3vw;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    .small-modal-sty .modal-body {
+      width: 56.6vw;
+      /* 36.6vw 500px */
+      margin-left: -28.3vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .small-modal-sty .modal-body {
+      width: 70.6vw;
+      /* 36.6vw 500px */
+      margin-left: -35.3vw;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .small-modal-sty .modal-body {
+      width: 80.6vw;
+      /* 36.6vw 500px */
+      margin-left: -40.3vw;
+    }
+  }
+  /*# sourceMappingURL=SmallModal.css.map */

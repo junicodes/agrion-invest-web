@@ -1,11 +1,9 @@
-
-
-import React from 'react'
+import React, { forwardRef} from 'react'
 import "./Buttons.css"
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-function Buttons(props) {
+const Buttons = forwardRef((props, ref) => {
     // let btnBrandStyle = {
     //         background: 'rgb(85, 19, 19)',
     //         color: 'white'
@@ -19,8 +17,8 @@ function Buttons(props) {
         classList += ' col-12'
     }
     return (
-        <button type="button" className={classList}>{props.buttonLabel}</button>
+        <button ref={ref} onClick={(e) => {props.onSubmitClick(e)}} type="button" className={classList}>{props.buttonLabel}</button>
     )
-}
+});
 
 export default Buttons
